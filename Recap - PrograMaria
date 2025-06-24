@@ -16,25 +16,28 @@ There are two main types of data: structured and unstructured
 
 **Unstructured data** incluedes imagemes, videos, audio and text - doesn't have a predefined format. 
 
+
 ##Class 2 - Data Filtering and Pivot Table
 complemented with content from DigitalOcean 
 
-The filter() function can be used to create a new iterador from a previously existing iterable. 
-An iterable is an object capable of returbing its elements one at a time, allowing it to be looped over 
-(for example, in a for loop) 
-que pode sofrer iteração, it will return itens in a sequence that qe can use in a loop for
+Filter() can be used to create a new iterator by a previously existing iterator
+Is an object capable of returning its elements one at a time, in sequence, alowwing it to be looped over (for example, in a for loop)
 
-Basic intasis for filter() is:
+Basic syntax of filter() is:
 
 filter(function, iterable)
-This will return an filter object, that is iterável. 
-We can use a function called list() that will bring all the itens return in a filter. 
 
+This returns a filter object, which itself is iterable. 
+To get all the items returned by filter(), we can convert it to a list using the list()
 
-Filter is more healpful than a compreensão de lista specially if we use a big data. 
+Filtered_list = list(filter(function, iterable))
 
-Compreensão de lista create another list and it requires more processing. But filter is an simple object related to the original list, and this ocuppies less memory capacity. 
+#Why use filter() instead of a list comprehensions?
 
+Filter() is often more efficient than a list comprehensions, especially with large datasets. 
+
+- List comprehensions create a new list and require more processing and memory because the entire list is stored in memory. 
+- But filter() return lightweight filter object that references the original iterable without creating a full copy, thus using less memory
 
 
 
