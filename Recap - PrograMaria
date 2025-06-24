@@ -1,6 +1,6 @@
 #Recap – Data Analysis Course (PrograMaria) 
 
-##Class 1
+##Class 1 - Structured and unstructured data
 
 Data Analysis can be used to 
 - Filter data by variables
@@ -16,6 +16,28 @@ There are two main types of data: structured and unstructured
 
 **Unstructured data** incluedes imagemes, videos, audio and text - doesn't have a predefined format. 
 
-##Class 2
+##Class 2 - Data Filtering and Pivot Table
+complemented with content from DigitalOcean 
+
+The filter() function can be used to create a new iterador from a previously existing iterable. 
+An iterable is an object capable of returbing its elements one at a time, allowing it to be looped over 
+(for example, in a for loop) 
+que pode sofrer iteração, it will return itens in a sequence that qe can use in a loop for
+
+Basic intasis for filter() is:
+
+filter(function, iterable)
+This will return an filter object, that is iterável. 
+We can use a function called list() that will bring all the itens return in a filter. 
+
+
+Filter is more healpful than a compreensão de lista specially if we use a big data. 
+
+Compreensão de lista create another list and it requires more processing. But filter is an simple object related to the original list, and this ocuppies less memory capacity. 
+
+
+
+
+
 
 
