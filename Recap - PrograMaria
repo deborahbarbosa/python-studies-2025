@@ -3,7 +3,7 @@
 ##Class 1 - Structured and unstructured data
 
 Data Analysis can be used to 
-- Filter data by variables
+- Filter data by variables: 
 - Calculate data based on variables
 - Group by variables
 - Cross and combine data using variáveis 
@@ -39,8 +39,64 @@ Filter() is often more efficient than a list comprehensions, especially with lar
 - List comprehensions create a new list and require more processing and memory because the entire list is stored in memory. 
 - But filter() return lightweight filter object that references the original iterable without creating a full copy, thus using less memory
 
+filter() can be used in 5 main ways:
+- With lambda: Uses an anonymous function directly inside filter().
+- With defined functions (def): When the logic is more complex, or when you want to reuse the function.
+- With None (to remove falsy values): If you pass None as the function, filter() will automatically remove falsy values like 0, None, False, '', [], {}, etc.
+- Combined with other functions (like map(), sorted(), etc.): You can combine filter() with other functions.
+- To filter dictionaries (using .items()): filter() doesn’t work directly on dictionaries, but you can apply it to keys, values, or items.
+
+The purpose of filter() is always the same:
+To filter elements from an iterable based on a logical condition.
+
+##Vocabulary Building:
+
+#Differences between lambda() and filter():
+
+**Lambda** is an anonymous function, meaning a function without a name. 
+It is used to create simple, one-line functions without the need to define them using def. 
+It's useful when you need a quick function for a simple task.
+
+**filter()** is a built-in Python function used to filter data. 
+It takes two arguments: a function that returns True or False, and an iterable (like a list, tuple, string, dicionary). 
+The filter() function goes through each element in the iterable and keeps only the items for which the function returns True.
 
 
+#What is a list comprehension? 
 
+Is a simplified and more concise way to create lists in Python from a sequence or iterable, applying conditions or transformations during the 
+list creation process.
 
+Example – Creating a list of numbers from 1 to 5:
+numbers = [x for x in range(1, 6)]
+# Output: [1, 2, 3, 4, 5]
 
+- It produces shorter and more readable code.
+- However, it consumes more memory than filter() or map() because it generates an entirely new list stored in memory.
+
+#What is Loops?
+Loops are repetition structures. They allow a block of code to be executed multiple times automatically, 
+either until a condition is met or until it goes through all the items in a sequence.
+
+**for loop** → Used to iterate over a sequence (like a list, string, dictionary, etc.).
+**while loop** → Runs while a condition is true, commonly used for conditions, counters, or processes that require logical repetition.
+
+- List comprehensions are usually faster than traditional for loops in most cases because they are optimized internally in Python.
+
+Example – for loop iterating over a list:
+
+names = ['Ana', 'Bruno', 'Carlos']
+for name in names:
+    print(name)
+
+#Output: 
+Ana  
+Bruno  
+Carlos  
+
+To continue about Filtering:
+https://www.digitalocean.com/community/tutorials/how-to-use-the-python-filter-function-pt
+
+To continue about structured and unstructured data:
+https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/verao_lncc_2019/aulas/aula1.ipynb
+https://github.com/pedrosiracusa/curso_python_eamc/blob/6fb0cd34c7cee46b06ec29906420ba101a408cd9/notebooks/aula1.ipynb
